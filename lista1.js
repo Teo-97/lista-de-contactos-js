@@ -1,9 +1,13 @@
 Contactos = ["mateo lopez", "camilo lozano", "esteban gomez"];
-
-function addellcontact(cont1) {
+console.log(Contactos);
+const addContact = (cont1) => {
   Contactos.push(cont1);
-  Contactos.splice(2, 1);
-}
+};
+const dellContact = (c2) => {
+  const c1 = Contactos.indexOf(c2);
+  Contactos.splice(c1, 1);
+};
 
-addellcontact("juliana lopez");
+addContact("juliana lopez");
+dellContact("mateo lopez");
 console.log(Contactos);
